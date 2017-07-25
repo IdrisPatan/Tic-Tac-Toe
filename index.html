@@ -3,25 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <script type="text/javascript" src="js/app.js"></script>
+  <style>
+    .cells {
+      width: 100%;
+      height: 100%;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      color: #666;
+      background: Grey;
+      font-size: 16px;
+      line-height: 1.6em;
+      padding-left: 500px;
+      padding-top : 25px;
+      padding-bottom : 25px;
+    }
+
+    button {
+      height: 250px;
+      width: 250px;
+      font-size: 800%;
+      font-family: fantasy;
+      font-style: normal;
+    }
+
+    p{
+      padding-left: 760px;
+      font-size: 150%;
+      font-family: Arial;
+      font-style: normal;
+    }
+
+    #reset {
+      height: 50px;
+      width: 100px;
+      font-size: 100%;
+      font-family: Arial;
+      font-style: normal;
+    }
+
+  </style>
 </head>
 <body>
-  <h2 class="playerTurn"></h2>
-  <div>
-    <div>
-        <div id="cell0"></div>
-        <div id="cell1"></div>
-        <div id="cell2"></div>
+
+  <div style="background: cadetblue;">
+    <p class="playerTurn">Player One's Turn </p>
+    <p class="numTurns">Number of Turns: 0</p>
+  </div>
+
+  <button id="reset"> Reset</button>
+
+  <div class="cells" >
+
+    <div style="display:flex">
+        <div id="cell0">
+          <button class="cell row1 col1" >_</button>
+        </div>
+        <div id="cell1">
+          <button class="cell row1 col2">_</button>
+        </div>
+        <div id="cell2">
+          <button class="cell row1 col3">_</button>
+        </div>
     </div>
-      <div>
-        <div id="cell3"></div>
-        <div id="cell4"></div>
-        <div id="cell5"></div>
+
+      <div style="display:flex">
+        <div id="cell3">
+          <button class="cell row2 col1">_</button>
+        </div>
+        <div id="cell4">
+          <button class="cell row2 col2">_</button>
+        </div>
+        <div id="cell5">
+          <button class="cell row2 col3">_</button>
+        </div>
       </div>
-      <div>
-        <div id="cell6"></div>
-        <div id="cell7"></div>
-        <div id="cell8"></div>
+
+      <div style="display:flex">
+        <div id="cell6">
+          <button class="cell row3 col1">_</button>
+        </div>
+        <div id="cell7">
+          <button class="cell row3 col2">_</button>
+        </div>
+        <div id="cell8">
+          <button class="cell row3 col3">_</button>
+        </div>
       </div>
+
   </div>
 </body>
 </html>
